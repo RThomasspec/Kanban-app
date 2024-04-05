@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanban</title>
+    <!-- Ajoutez ici vos liens vers les fichiers CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="taches">
+            <div class="block">
+                <div class="title">
+                    <p>Tâches</p>
+                </div>
+                <div class="row">
+                    <input type="text" id="input-box1" placeholder="Ajoutez vôtre texte">
+                    <button onclick="addTask('list-container1','input-box1')"> + </button>
+                </div>
+                <ul class="list-container" id="list-container1">
+
+                </ul>
+            </div>
+            <div class="block">
+                <div class="title">
+                    <p>A faire</p>
+                </div>
+                <div class="row">
+                    <input type="text" id="input-box2" placeholder="Ajoutez vôtre texte">
+                    <button onclick="addTask('list-container2','input-box2')"> + </button>
+                </div>
+                <ul class="list-container" id="list-container2">
+
+                </ul>
+            </div>
+            <div class="block">
+                <div class="title">
+                    <p>En cours</p>
+                </div>
+                <div class="row">
+                    <input type="text" id="input-box3" placeholder="Ajoutez vôtre texte">
+                    <button onclick="addTask('list-container3','input-box3')"> + </button>
+                </div>
+                <ul class="list-container" id="list-container3">
+
+                </ul>
+            </div>
+            <div class="block">
+                <div class="title">
+                    <p>A tester</p>
+                </div>
+                <div class="row">
+
+                    <input type="text" id="input-box4" placeholder="Ajoutez vôtre texte">
+                    <button onclick="addTask('list-container4','input-box4')"> + </button>
+                </div>
+                <ul class="list-container" id="list-container4">
+
+                </ul>
+            </div>
+            <div class="block">
+                <div class="title">
+                    <p>Terminé</p>
+                </div>
+                <div class="row">
+
+                    <input type="text" id="input-box5" placeholder="Ajoutez vôtre texte">
+                    <button onclick="addTask('list-container5','input-box5')"> + </button>
+
+                </div>
+                <ul class="list-container" id="list-container5">
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

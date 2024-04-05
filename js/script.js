@@ -21,13 +21,15 @@ function addTask(idContainer, idInput){
     }
     inputBox.value="";
 
-}
+} 
+
 
 const listContainers = document.querySelectorAll('.list-container');
 listContainers.forEach(container => {
     
     container.addEventListener('click', function(e) {
         if(e.target.tagName === "SPAN"){
+            // tu viens recuperer le parent du span qui est li pour pouvoir le supprimer.
             const liElement = e.target.parentNode;
             liElement.remove();
         }

@@ -12,6 +12,7 @@ function addTask(idContainer, idInput) {
         const listcontainer = document.getElementById(idContainer);
         let barreHorizontal = document.createElement("div");
 
+        
         barreHorizontal.classList.add("barre-horizontal");
         listcontainer.appendChild(barreHorizontal);
         let li = document.createElement("li");

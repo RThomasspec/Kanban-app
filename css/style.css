@@ -18,7 +18,6 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .taches{
@@ -32,6 +31,7 @@ html, body {
     height: 500px;
     width: 31vh;
     margin-left: 20px;
+    border: 2px dashed #ccc;
 }
 
 input{
@@ -64,6 +64,9 @@ button:hover{
     margin-bottom: 10px;;
     
 }
+.hovered {
+    border-color: #f00; /* Style de la bordure lorsqu'un élément est survolé */
+}
 
 .title{
     display: flex;
@@ -83,11 +86,11 @@ ul li{
     align-items: center ;
     overflow-wrap: break-word;
     white-space: pre-line;
-}
-li{
-    display: block;
     justify-content: space-between;
+}
 
+#text{
+    margin-right: 50px;
 }
 
 span{
@@ -115,3 +118,15 @@ ul{
     width: 100%;
     height: 400px;
 }
+
+.list-img img{
+
+    display: flex;
+    width: 15px;
+    height: 25px;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    padding-top: 2px;
+}
+
